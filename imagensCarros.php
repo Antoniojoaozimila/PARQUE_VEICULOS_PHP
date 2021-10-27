@@ -42,10 +42,10 @@
                                                               while($row2 = $result2->fetch_assoc()){?>
                                                                   <div class="cardapio-item-outer bounce-hover small-10 medium-4 columns"> 
                                                                         <div class="cardapio-item">
-                                                                            <a href="descricaoVeiculo.php?prato=<?php echo $row2['codigo']; ?>">
+                                                                            <a href="descricaoVeiculo.php?id=<?php echo $row2['codigo']; ?>">
                                                                                 
                                                                                 <div class="item-image">
-                                                                                    <img src="lib/img/cardapio/<?php echo $row2['codigo']; ?>.jpg" alt="cogumelos"/>   
+                                                                                    <img src="lib/img/carros/<?php echo $row2['codigo']; ?>.jpg" alt="veiculos"/>   
                                                                                 </div>
 
                                                                                 <div class="item-info">
