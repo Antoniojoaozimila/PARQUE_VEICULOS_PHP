@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>CRUD</title>
   </head>
@@ -33,36 +34,36 @@
     <div class="Container">
     <div class="row"> 
         <div class="col">
-             <h1>Cadastro</h1>
+             <div class="input-group"><h1 >GESTÃO DAS VIATURAS</h1></div>
         <form action ="cadastro_codigoSql.php" method="POST">
           
-             <div class="col-md-4">
-             <input type="hidden" name="id" value="<?php echo $id ?>">
-               <label for="marca" class="form-label">Marca da viatura</label>
+             <div   class="input-group">
+             <input type="hidden"  name="id" value="<?php echo $id ?>">
+               <label for="marca" class="input-group">Marca da viatura</label>
                <input type="text" class="form-control" name="marca" value="<?php  echo $marca ?> "> 
               	
              </div>    
              
-             <div class="col-md-4">
-               <label for="modelo" class="form-label">modelo</label>
+             <div class="input-group">
+               <label for="modelo" class="input-group">modelo</label>
                <input type="text" class="form-control" name="modelo" value="<?php echo $modelo ?>">  
              </div>  
 
-             <div class="col-md-4">
-               <label for="preco" class="form-label">preco</label>
+             <div class="input-group">
+               <label for="preco" class="input-group">preco</label>
                <input type="text" class="form-control" name="preco" value="<?php echo $preco ?>">  
 
              </div> 
 
              
-             <div class="col-md-4">
-               <label for="categoria" class="form-label">categoria</label>
+             <div class="input-group">
+               <label for="categoria" class="input-group">categoria</label>
                <input type="text" class="form-control" name="categoria" value="<?php echo $categoria?>">  
 
              </div> 
 
 
-             <div class="col-md-4">
+             <div class="input-group">
              <?php if ($editar_v==false): ?>
 				<button type="submit" name="salvar" class="btn btn-outline-success">Gravar</button>
 				
@@ -75,8 +76,8 @@
 
          <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
-    <form class="d-flex" action ="pesquisar.php" method="POST">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="busca" autofocus>
+    <form class="d-flex" action ="cadastroForm.php" method="POST">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="busca" >
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
   </div>
